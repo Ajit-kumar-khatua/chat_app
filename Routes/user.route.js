@@ -37,7 +37,7 @@ userRouter.post("/register",async (req,res)=>{
                     from: 'ajitkhatua286@gmail.com',
                     to: `${email}`,
                     subject: 'Verify your Email',
-                    text: `Please click on the link for Veify your email. http://localhost:8080/user/${registerUser[0]._id}`
+                    text: `Please click on the link for Veify your email. https://chatapp-1vwh.onrender.com/user/${registerUser[0]._id}`
                 };
                 transporter.sendMail(mailOptions, (error, info) => {
                     if (error) {
